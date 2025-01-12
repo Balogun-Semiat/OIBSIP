@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav class="flex px-10 py-3 bg-white  items-center w-full drop-shadow-lg z-50 sticky top-0">
+            <div class="w-1/2" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p class="name font-bold md:text-3xl">SamFoods</p>
+            </div>
+            
+            <div class="group relative w-1/2">
+                <div class="lg:hidden text-center">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+
+                <div class="absolute gap-10 top-0 lg:-top-3 top-full left-0 hidden lg:flex group-hover:block lg:group-hover:flex bg-amber-500 lg:bg-transparent w-auto px-4 py-2 text-white lg:text-black z-50 text-sm" style="font-size:small;">
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#home">Home</a></p>
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#about">About</a></p>
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#specials">Specials</a></p>
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#menu">Menu</a></p>
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#gallery">Gallery</a> </p>
+                    <p class="border-b-2 border-white lg:hover:border-amber-500 mb-3 lg:mb-0"><a href="#contact">Contact</a></p>
+                </div>
+            </div>      
+        </nav>
+
+        <div id="home" class="img h-[80vh] sec-one flex flex-col justify-center px-5 md:px-16">
+            <div class="heroContent">
+                <h1 id="heroTitle" class="text-xl md:text-3xl font-semibold text-white " style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">A Culinary Experience Like No Other</h1>
+
+                <p id="heroText" class="text-white text-sm md:text-md my-2">Delight your senses with the finest dishes, crafted with passion and served with love.</p>
+                
+                <div class="text-sm my-4 gap-3 grid md:flex transition ease-in-out">
+                    <button class="border-2 border-amber-500 hover:bg-amber-500 hover:border-none rounded-full font-semibold text-white px-4 py-1"><a href="#menu">View Menu</a></button>
+                    <button class="border-2 border-amber-500 hover:bg-amber-500 hover:border-none rounded-full font-semibold text-white px-4 py-1 hover:bg-white hover:text-amber-600"><a href="#contact">Book a Table</a></button>
+                </div>
+            
+            </div>
+            <button id="prev-btn" class="bg-gray-400 text-white p-1 w-fit absolute left-0"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="next-btn" class="bg-gray-400 text-white p-1 w-fit absolute right-0"><i class="fa-solid fa-chevron-right"></i></button>
+
+            
+        </div>
+
+        <div id="about" class="grid lg:flex p-5 md:px-10 md:py-16 items-center bg-gray-100 sec-two">
+            <div class="w-full md:w-1/2 about-img">
+                <img src="./images//restaurant-interior.avif" class="" alt="">
+            </div>
+            <div class="w-full md:w-1/2 p-3 about-text">
+                <h1 class="text-xl md:text-3xl mb-3 font-bold" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About Us</h1>
+                <p class="mt-5 md:text-xl text-justify" style="font-size: medium;">Welcome to SamFoods, where every meal tells a story. <br> Located in the heart of Ibadan, we pride ourselves on <br> using the freshest ingredients to create dishes that <br> blend tradition and innovation. Whether you're dining  <br> with family, meeting friends,  or celebrating a special  <br> occasion, our warm and inviting atmosphere ensures  <br> a memorable experience. </p>
+            </div>
+        </div>
+
+        <div class="p-10 flex flex-col items-center">
+            <div>
+                <button class="btn text-center bg-gray-100 text-amber-400 rounded-full py-2 px-3" 
+                style="font-size: small; font-weight: bold;">WHY US</button>
+            </div>
+            <div>
+                <h1 class="whyTitle my-5 text-2xl text-amber-600 font-bold"> <i class="text-gray-800">Why Choose</i> Our Restaurant</h1>
+                <div class="grid lg:flex gap-4" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <div class="bg-gray-200 hover:bg-amber-800 rounded pl-3 pr-6 py-4 whyText hover:-translate-y-2 ease-in-out duration-300 ">
+                        <h1 class="text-amber-600 mb-3 text-2xl font-bold">01</h1>
+                        <h3 class="mb-3 text-lg text-gray-800">Lorem ipsum dolor</h3>
+                        <p class="text-sm text-gray-800">sit amet consectetur adipisicing elit. Eos, quidem. Qui, alias, voluptatum, quos nisi veniam magnam quo hic facere autem labore quisquam vel qui illum eveniet quas aspernatur.</p>
+                    </div>
+                    <div class="bg-gray-200 hover:bg-amber-800 rounded pl-3 pr-6 py-4 whyText hover:-translate-y-2 ease-in-out duration-300">
+                        <h1 class="text-amber-600 mb-3 text-2xl font-bold">02</h1>
+                        <h3 class="mb-3 text-lg text-gray-800">Lorem ipsum dolor</h3>
+                        <p class="text-sm text-gray-800">sit amet consectetur adipisicing elit. Eos, quidem. Qui, alias, voluptatum, quos nisi veniam magnam quo hic facere autem labore quisquam vel qui illum eveniet quas aspernatur.</p>
+                    </div>
+                    <div class="bg-gray-200 hover:bg-amber-800 rounded pl-3 pr-6 py-4 whyText hover:-translate-y-2 ease-in-out duration-300">
+                        <h1 class="text-amber-600 mb-3 text-2xl font-bold">03</h1>
+                        <h3 class="mb-3 text-lg text-gray-800">Lorem ipsum dolor</h3>
+                        <p class="text-sm text-gray-800">sit amet consectetur adipisicing elit. Eos, quidem. Qui, alias, voluptatum, quos nisi veniam magnam quo hic facere autem labore quisquam vel qui illum eveniet quas aspernatur.</p>
+                    </div>      
+                    <div class="bg-gray-200 hover:bg-amber-800 rounded pl-3 pr-6 py-4 whyText hover:-translate-y-2 ease-in-out duration-300">
+                        <h1 class="text-amber-600 mb-3 text-2xl font-bold">04</h1>
+                        <h3 class="mb-3 text-lg text-gray-800">Lorem ipsum dolor</h3>
+                        <p class="text-sm text-gray-800">sit amet consectetur adipisicing elit. Eos, quidem. Qui, alias, voluptatum, quos nisi veniam magnam quo hic facere autem labore quisquam vel qui illum eveniet quas aspernatur.</p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+        <div id="specials" class=" flex flex-col items-center  p-5 md:px-10 md:py-16 items-center  text-white">
+            <div class="">  
+                <div class="grid lg:flex gap-5">
+                    <div class="w-full md:w-1/2">
+                        <img src="./images/happy-waiter.jpg" class="" alt="">
+                    </div>
+        
+                    <div class="w-full md:w-1/2 p-3 text-gray-800">
+                        <h1 class="whyTitle my-5 text-2xl text-amber-600 font-bold"> <i class="text-gray-800">Our Signature</i> Creations</h1>
+                        <h1 class="text-2xl md:text-3xl mb-3 font-bold "> </h1>
+                        <h3 class="text-md mb-3">Savor the flavors of our chef's specials, crafted to perfection and loved by all.</h3>
+                        <p class="mb-3">Featured Dishes:</p>
+                        <li>Dish 1: "Spicy Seafood Pasta" - Fresh seafood, perfectly spiced.</li>
+                        <li>Dish 2: "Classic Margherita Pizza" - Authentic and delicious.</li>
+                        <li>Dish 3: "Chocolate Lava Cake" - The perfect sweet indulgence.</li>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <div id="menu" class="px-10 py-12 flex flex-col items-center">
+            <div>
+                <button class="btn  text-center bg-gray-100 text-amber-400 rounded-full py-2 px-3" 
+                style="font-size: small; font-weight: bold;">OUR MENU</button>
+            </div>
+
+           <div>
+            <h1 class="whyTitle my-5 text-2xl text-amber-600 font-bold"> <i class="text-gray-800">Check our Tasty</i> Menu</h1>
+
+            <div class="grid md:flex gap-8">
+                <div class="01">
+                    <div class="flex gap-1 items-center mb-8">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/R (2).jpeg" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                        </div>
+
+                        <div class="flex gap-1 items-center">
+                            <div>
+                                <h3 class="">Jollof rice</h3>
+                                <p class="text-sm text-amber-600">Jollof rice cooked with love</p>
+                            </div>
+                            <div class="hidden lg:block">
+                                .......................................................
+                            </div>
+                            <div>
+                                #5,000
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="flex gap-1 items-center mb-8">
+                       <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/Spaghetti-Bolognese.webp" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                       </div>
+                        <div class="flex gap-1 items-center">
+                           <div>
+                                <h3 class="">Spaghetti Bolognese</h3>
+                                <p class="text-sm text-amber-600">Lorem ipsum dolor sit  </p>
+                           </div>
+                           <div class="hidden lg:block">
+                            ............................................................
+                           </div>
+                            <div>
+                                #3,500
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="flex gap-1 items-center mb-8">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/th (2).jpeg" class="w-w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                        </div>
+                        <div class="flex  items-center">
+                            <span>
+                                <h3>Crab</h3>
+                                    <p class="text-sm text-amber-600">Lorem Quo, quidem?</p>
+                            </span>
+                            <span class="hidden lg:block">
+                                ................................................................
+                            </span>
+                            <span>
+                            #6,500
+                            </span>
+                        </div>
+                    </div>
+                   
+                    <div class="flex gap-1 items-center ">
+                       <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/crab.png" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                       </div>
+                        <div class="flex gap-1 items-center">
+                           <div>
+                            <h3 class="text-">Spicy Seafood Pasta</h3 class="text-">
+                                <p class="text-sm text-amber-600">Lorem ipsum quidem</p>
+                           </div>
+                           <span class="hidden lg:block">
+                            ............................................................
+                           </span>
+                           <span>
+                            #4,500
+                           </span>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="02">
+                    <div class="flex gap-1 items-center mb-8">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/Pizza.jpeg" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                        </div>
+                        <div class="flex gap-1 items-center">
+                          <span>
+                            <h3 class="text-">Classic Margherita Pizza</h3 class="text-">
+                                <p class="text-sm text-amber-600">Lorem ipsum dolor sit amet </p>
+                          </span>
+                          <span class="hidden lg:block">
+                            ............................................................
+                           </span>
+                           <span>
+                            #8,500
+                           </span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-1 items-center mb-8">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/lava-cake.jpg" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <span>
+                                <h3 class="text-">Chocolate Lava Cake</h3 class="text-">
+                                    <p class="text-sm text-amber-600">Lorem ipsum dolor sit amet </p>
+                            </span>
+                            <span class="hidden lg:block">
+                                ............................................................
+                               </span>
+                               <span>
+                                #4,500
+                               </span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-1 items-center mb-8">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/th.jpeg" class="w-[50px] h-[50px] rounded-full drop-shadow-md" >
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <span>
+                                <h3 class="text-">Native Spaghetti</h3 class="text-">
+                                <p class="text-sm text-amber-600">Lorem ipsum dolor sit </p>
+                            </span>
+                            <span class="hidden lg:block">
+                                ....................................................................
+                            </span>
+                            <span>
+                                #5,000
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-1 items-center ">
+                        <div class="w-[55px] h-[55px] rounded-full bg-gray-800 drop-shadow-md flex justify-center items-center">
+                            <img src="./images/food.jpg" class="w-12 h-12 rounded-full drop-shadow-md" >
+                        </div>
+                        <div class="flex gap-1 items-center">
+                           <span>
+                                <h3 class="text-">Native rice</h3 class="text-">
+                                <p class="text-sm text-amber-600">Lorem ipsum dolor </p>
+                           </span>
+                           <span class="hidden lg:block">
+                            ........................................................................
+                           </span>
+                           <span>
+                            #9,500
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           </div>
+        </div>
+
+        <div id="gallery" class="p-10">
+            <div class="flex items-center justify-center">
+                <button class="btn  text-center bg-gray-100 text-amber-400 rounded-full py-2 px-3" 
+                style="font-size: small; font-weight: bold;">OUR GALLERY</button>
+            </div>
+            <div>
+                <h1 class="whyTitle my-5 text-2xl text-amber-600 font-bold"> <i class="text-gray-800">Some pictures</i> from our Gallery</h1>
+
+                <div class="grid lg:grid-cols-4 gap-3">
+                    <img class="h-52" src="./images/gallery-2.jpg" alt="">
+                    <img class="h-52" src="./images/gallery-3.jpg" alt="">
+                    <img class="h-52" src="./images/restaurant-interior.avif" alt="">
+                    <img class="h-52" src="./images/happy-waiter.jpg" alt="">
+                    <img class="h-52" src="./images/gallery-4.jpg" alt="">
+                    <img class="h-52" src="./images/gallery-5.jpg" alt="">
+                    <img class="h-52" src="./images/gallery-8.jpg" alt="">
+                    <img class="h-52" src="./images/restaurant-interior.avif" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="contact" class="px-10 py-12">
+            <h3 class="text-2xl text-center md:text-3xl mb-3 font-bold ">Contact us:</h3>
+
+            <div class="grid md:flex justify-around gap-10 mt-5">
+                <div>
+                    <div class="flex gap-2 items-center mb-8">
+                        <span class=" bg-gray-800 rounded drop-shadow-md "><i class="fa-solid fa-location-dot text-xl text-white py-1 px-2"></i></span>
+                        <div>
+                            <h3 class="">Location:</h3>
+                            <p class="text-sm text-amber-600">5, Ring-road, Ibadan, Oyo state</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-2 items-center mb-8">
+                        <span class=" bg-gray-800 rounded drop-shadow-md "><i class="fa-solid fa-phone text-xl text-white py-1 px-2"></i></span>
+                        <div>
+                            <h3 class="">Open Hours:</h3>
+                            <p class="text-sm text-amber-600">Monday - Saturday</p>
+                            <p class="text-sm text-amber-600">9A.M - 10 P.M</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex gap-2 items-center mb-8">
+                        <span class=" bg-gray-800 rounded drop-shadow-md "><i class="fa-solid fa-phone text-xl text-white py-1 px-2"></i></span>
+                        <div>
+                            <h3 class="">Call Us</h3>
+                            <p class="text-sm text-amber-600">07089786745</p>
+                            <p class="text-sm text-amber-600">09123454523</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex gap-2 items-center mb-8">
+                        <span class=" bg-gray-800 rounded drop-shadow-md "><i class="fa-regular fa-envelope-open text-xl text-white py-1 px-2"></i></span>
+                        <div>
+                            <h3 class="">Email Us:</h3>
+                            <p class="text-sm text-amber-600">samfoods@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-2 items-center mb-8">
+                        <span class=" bg-gray-800 rounded drop-shadow-md "><i class="fa-solid fa-link text-xl text-white py-1 px-2"></i></span>
+                        <div>
+                            <h3 class="">Our Website</h3>
+                            <p class="text-sm text-amber-600"><a href="#">samfoods.com</a></p>
+                        </div>
+                    </div>
+                    
+                </div>    
+             </div>        
+        </div>
+
+        <footer id="contact" class="bg-gray-900 mt-10">
+            <p class="text-center text-white py-6">Copyright &copy; 2021 All rights reserved.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="text-white text-sm"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white text-sm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white text-sm"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-white text-sm"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="text-white text-sm">Privacy Policy</a>
+                <a href="#" class="text-white text-sm">Terms & Conditions</a>
+            </div>
+        </footer>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

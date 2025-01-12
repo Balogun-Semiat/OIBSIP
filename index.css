@@ -1,0 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+}
+.whyTitle {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+  
+.name{
+    background: linear-gradient(to top, red, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.img{
+    position: relative;
+    width: 100%;
+    /* height: 400px; */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.5) 100%), url('./images//food.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.heroContent{
+    opacity: 0;
+    position: absolute;
+    animation: slide-in 5s ease-out forwards;
+}
+.about-text{
+    opacity: 0;
+    /* position: absolute; */
+    animation: slide-in 0.5s ease-out forwards;
+    /* right: 0; */
+}
+.about-img{
+    opacity: 0;
+    /* position: absolute; */
+    animation: slide-in 0.5s ease-out forwards;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-70px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
