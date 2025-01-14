@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f4037;
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #1f4037;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #99f2c8;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .achievements {
+            display: flex;
+           
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .achievements p{
+            display: inline-block;
+        }
+        /* .achievements-img{
+            max-width: 80%;
+        } */
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: #1f4037;
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: white;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .button-container a:hover {
+            background: #99f2c8;
+            background: linear-gradient(to right, #99f2c8, #1f4037);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #1f4037;
+            color: white;
+        }
+
+        footer a {
+            color: #99f2c8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        @media screen and (max-width: 992px) {
+            .achievements{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Ngozi Okonjo-Iweala</h1>
+    </header>
+    <main>
+        <section>
+            <div class="image-container">
+                <img src="./images/Ngozi_Okonjo.jpg" alt="">
+            </div>
+
+            <h2>About Ngozi Okonjo-Iweala</h2>
+            <p>Ngozi Okonjo-Iweala is a Nigerian economist and international development expert who has made remarkable contributions to global economic policies. As the first woman and African to serve as the Director-General of the World Trade Organization (WTO), she has been a trailblazer in her field.</p>
+
+            <div class="achievements">
+                <div>
+                    <h2>Achievements</h2>
+                    <p>Throughout her illustrious career, Ngozi has held notable positions such as the Managing Director of the World Bank and twice served as Nigeria’s Finance Minister. She played a pivotal role in securing debt relief for Nigeria, which resulted in a historic $30 billion reduction in the nation’s external debt.</p>
+                    <p>Her leadership extends to serving on boards of prestigious organizations like Twitter, Gavi, and the Global Commission on the Economy and Climate.</p>
+                </div>
+                <div class="achievements-img">
+                    <img src="./images//OIP.jpeg" alt="">
+                </div>
+            </div>
+
+            <h2>Legacy</h2>
+            <p>Ngozi Okonjo-Iweala’s work continues to inspire millions globally. Her dedication to transparency, economic reform, and equitable growth serves as a beacon for aspiring leaders and change-makers.</p>
+        </section>
+        <div class="button-container">
+            <a href="https://en.wikipedia.org/wiki/Ngozi_Okonjo-Iweala">Learn More</a>
+        </div>
+    </main>
+    <footer>
+        <p>Designed by Semiat. <a href="mailto: balogunsemiat2019@gmail.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>

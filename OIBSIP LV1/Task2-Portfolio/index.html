@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-gray-800 no-white-space">My Portfolio</div>
+        <ul class="hidden lg:flex space-x-6 text-gray-600 ">
+          <li><a href="#about" class="hover:text-gray-900">About</a></li>
+          <li><a href="#projects" class="hover:text-gray-900">Projects</a></li>
+          <li><a href="#testimonials" class="hover:text-gray-900">Testimonial</a></li>
+          <li><a href="#contact" class="hover:text-gray-900">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section class="bg-contain  bg-no-repeat bg-center h-[70vh] lg:h-screen text-white" style="background-image: url('./images/semy.png');">
+      <div class="container mx-auto h-full flex flex-col justify-center items-center text-center">
+        <h1 class="text-3xl lg:text-5xl font-bold">Hello, I'm Semiat</h1>
+        <p class="typewriter mt-4 text-xl">A Passionate Web Developer</p>
+        <a href="#contact" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Hire Me</a>
+      </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="bg-white">
+        <div class='flex flex-col lg:flex-row px-5 lg:px-12 py-5 h-fit w-full text-sm lg:space-x-6'>
+            <div class='w-full lg:w-1/2 p-3 flex flex-col lg:flex-row gap-5 justify-center items-center'>
+                 <div class='rounded-md hidden lg:block w-[300px] about-img border-2 border-amber-400'>
+                     <img src='./images/semy.png' class='about-img w-full' alt="" />
+                 </div>
+     
+                 <div>
+                    <h3 class='text-lg font-semibold mb-3 text-white bg-blue-600 p-1'>Skills:</h3>
+                    <li class='my-2'>Frontend: HTML, CSS, JavaScript, React, Angular, Redux, Shadcn UI</li>
+                    <li class='mb-2'>Backend: Node.js, Express.js, PHP, MongoDB </li>
+                    <li class='mb-2'>Design & Tools: Photoshop, MS Word (for documentation), Git, REST APIs</li>
+                    <li>Deployment: Render, Vercel</li>
+                </div>
+            </div>
+               <!-- <div class='text-blue-800 text-md font-semibold'>
+                 <p>Name: Balogun Semiat Abosede</p>
+                 <p>Phone: 07086495645, 09161895714</p>
+                 <p>City: Ibadan, Oyo state </p>
+                 <p>Email: balogunsemiat2019@gmail.com</p>
+                 <p>Freelance: Available</p>
+               </div> -->
+
+            <div class="hidden lg:block bg-gray-900 w-1"></div>
+
+            <div class='w-full lg:w-1/2 bg-white'>
+                <h3 class='text-lg font-semibold text-white bg-blue-600 mb-2 p-1'>Background: </h3>
+                <p class="text-sm">
+                Hello! I’m Semiat, a passionate web developer with expertise in building modern, user-friendly websites and applications. <br /> My journey into web development began right after graduating with a degree in accounting, driven by my curiosity for technology and problem-solving. Over the years, I have honed my skills in the MERN stack, enabling me to craft seamless and scalable full-stack solutions.
+            
+                I’m currently expanding my expertise by learning PHP and Angular to diversify my capabilities further. Alongside development, I have a keen eye for design, leveraging tools like Photoshop to ensure the visual aspects of my projects are as compelling as the code behind them.
+            
+                When I’m not coding, I enjoy diving into creative pursuits, collaborating with clients to bring their ideas to life, and staying updated with the latest tech trends. My ultimate goal is to create digital experiences that not only meet expectations but exceed them.
+                </p>       
+            </div>
+        </div>
+    </section>
+  
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-800 text-center">My Projects</h2>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./images/samfood.png" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800">Landing Page</h3>
+              <p class="mt-2 text-gray-600">A landing page designed for SamFoods</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./images/Screenshot 2025-01-11 082328.png" alt="Project 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800">About</h3>
+              <p class="mt-2 text-gray-600">About section of the restaurant page</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="./images/Screenshot 2025-01-11 095949.png" alt="Project 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800">Real estate website</h3>
+              <p class="mt-2 text-gray-600">A website designed to connect buyers and sellers of properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 text-center">Testimonials</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+          <p class="text-gray-600">"I really enjoyed working with Semiat. She's calm and diligent in her work"</p>
+          <h3 class="mt-4 text-xl font-bold text-gray-800">John Doe</h3>
+          <span class="text-gray-500">Software Engineer</span>
+        </div>
+        <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+          <p class="text-gray-600">"Semiat is who she thinks she is. A hardworking and consistent lady"</p>
+          <h3 class="mt-4 text-xl font-bold text-gray-800">Jane Smith</h3>
+          <span class="text-gray-500">Project Manager</span>
+        </div>
+        <div class="bg-gray-100 shadow-md rounded-lg p-6 text-center">
+          <p class="text-gray-600">"Give Semiat a trial and you won't regret. Speaking from experience"</p>
+          <h3 class="mt-4 text-xl font-bold text-gray-800">Emily Johnson</h3>
+          <span class="text-gray-500">UI/UX Designer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-800 text-center">Contact Me</h2>
+        <form class="mt-10 max-w-xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Name</label>
+            <input type="text" id="name" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email</label>
+            <input type="email" id="email" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700">Message</label>
+            <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Semiat. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

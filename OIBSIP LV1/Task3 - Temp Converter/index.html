@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="">
+        <div class="w-full lg:w-5/12 shadow-xl mx-auto my-8 p-5 ">
+            <h1 class="text-center mb-7 text-xl font-semibold">Temperature Converter</h1>
+
+            <main class="text-center">
+            <div class="grid lg:flex gap-9 justify-around items-center mb-7">
+                    <form id="converterForm">
+                        <label for="temperatureInput">Enter temperature:</label> <br>
+                        <input type="number" id="temperatureInput" name="temperatureInput" 
+                        class="border-b-2 border-black outline-none my-3 px-2 py-1 text-gray-800" required>
+                    </form>
+
+                    <div class="text-center">
+                        <label for="type">Choose type:</label> <br>
+                        <select name="option" id="option" class="border-black border-b-2 w-fit h-fit my-3 py-1 px-5 bg-white text-gray-800">
+                            <option value="Farenheit">Farenheit</option>
+                            <option value="Celsius">Celsius</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div>
+                <button type="submit" id="convertBtn" class="w-full bg-blue-500 text-white py-2 px-7 rounded hover:bg-blue-600 my-7">Convert</button>
+            </div>
+
+            <p id="caution"></p>
+
+            <div class="text-start my-5">
+                <h2 class="text-xl mb-1 px-2">Result</h2>
+                <div id="result" class="border-black border-b-2 px-2 py-2 text-xl h-12 w-full">
+                    
+                </div>
+            </div>
+
+            </main>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
